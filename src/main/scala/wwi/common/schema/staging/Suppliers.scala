@@ -1,0 +1,33 @@
+package wwi.common.schema.staging
+
+case class Suppliers(
+                      SupplierID:                   Integer,
+                      SupplierName:                 String,
+                      SupplierCategoryID:           Integer,
+                      PrimaryContactPersonID:       Integer,
+                      AlternateContactPersonID:     Integer,
+                      DeliveryMethodID:             Integer,
+                      DeliveryCityID:               Integer,
+                      PostalCityID:                 Integer,
+                      SupplierReference:            String,
+                      BankAccountName:              String,
+                      BankAccountBranch:            String,
+                      BankAccountCode:              String,
+                      BankAccountNumber:            String,
+                      BankInternationalCode:        String,
+                      PaymentDays:                  Integer,
+                      InternalComments:             String,
+                      PhoneNumber:                  String,
+                      FaxNumber:                    String,
+                      WebsiteURL:                   String,
+                      DeliveryAddressLine1:         String,
+                      DeliveryAddressLine2:         String,
+                      DeliveryPostalCode:           String,
+                      DeliveryLocation:             String,
+                      PostalAddressLine1:           String,
+                      PostalAddressLine2:           String,
+                      PostalPostalCode:             String,
+                      LastEditedBy:                 Integer,
+                      ValidFrom:                    String,
+                      ValidTo:                      String
+                    )
