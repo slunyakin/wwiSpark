@@ -5,7 +5,7 @@ import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructT
 object CustomerDim {
 
   object Fields {
-    val WWICustomerID = "wwiCustomerId"
+    val CustomerKey = "customerKey"
     val Customer = "customer"
     val BillToCustomer = "billToCustomer"
     val Category = "category"
@@ -17,7 +17,7 @@ object CustomerDim {
   import Fields._
 
   val schema: StructType = StructType(Seq(
-    StructField(WWICustomerID, IntegerType),
+    StructField(CustomerKey, IntegerType),
     StructField(Customer, StringType),
     StructField(BillToCustomer, StringType),
     StructField(Category, StringType),
@@ -27,7 +27,7 @@ object CustomerDim {
   ))
 
   val columnList = Seq(
-    WWICustomerID,
+    CustomerKey,
     Customer,
     BillToCustomer,
     Category,

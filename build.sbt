@@ -11,3 +11,4 @@ libraryDependencies += "net.liftweb" %% "lift-json" % "3.5.0"
 libraryDependencies += "junit" % "junit" % "4.13" % Test
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.3.0-SNAP3" % Test
 libraryDependencies += "org.scalatestplus" %% "junit-4-13" % "3.2.11.0" % "test"
+libraryDependencies += "com.github.mrpowers" %% "spark-daria" % "0.39.0"

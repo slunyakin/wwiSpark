@@ -42,7 +42,7 @@ object DimensionsHelper {
         .leftJoin(customersDF.as("customersBT"), customersDF(Customers.Fields.BillToCustomerID) === col("customersBT." + Customers.Fields.CustomerID))
         .leftJoin(peopleDF, customersDF(Customers.Fields.PrimaryContactPersonID) === peopleDF(People.Fields.PersonID))
         .select(
-          customersDF(Customers.Fields.CustomerID).as(CustomerDim.Fields.WWICustomerID),
+          customersDF(Customers.Fields.CustomerID).as(CustomerDim.Fields.CustomerKey),
           customersDF(Customers.Fields.CustomerName).as(CustomerDim.Fields.Customer),
           col("customersBT." + Customers.Fields.CustomerName).as(CustomerDim.Fields.BillToCustomer),
           customerCategoryDF(CustomerCategories.Fields.CustomerCategoryName).as(CustomerDim.Fields.Category),
