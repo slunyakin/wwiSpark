@@ -1,2 +1,2 @@
-# wwiSpark
-World Wide Importers on Spark + PASS Summit 2024 Demo Code
+# World Wide Importers DW on Spark
+This package contains code of [World Wide Importers DW](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers/wwi-dw-ssdt/wwi-dw-ssdt) implemented on Scala for running on Apache Spark using DataFrame API. The code was used for demostrating Software Development principles applied to data engineering durign [PASS Summit 2024 Demo](https://passdatacommunitysummit.com/speakers/SergiyLunyakin).
